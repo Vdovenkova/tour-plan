@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli-Light.woff") format("woff"), url("../fonts/Muli-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli-Regular.woff") format("woff"), url("../fonts/Muli-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli-SemiBold.woff") format("woff"), url("../fonts/Muli-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli-Bold.woff") format("woff"), url("../fonts/Muli-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
