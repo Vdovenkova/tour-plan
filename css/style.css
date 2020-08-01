@@ -550,6 +550,7 @@ img {
     display: flex;
     width: 16px;
     height: 11px;
+    padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
