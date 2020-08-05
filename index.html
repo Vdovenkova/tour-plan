@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -100,7 +101,7 @@
     <!-- /.breadcrumb -->
     <section class="hotel">
       <div class="container">
-        <div class="hotel-info">
+        <div class="hotel-info hotel-info__wrapper">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars">
@@ -130,9 +131,42 @@
           <!-- ./rating -->
         </div>
         <!-- /.hotel-info -->
+        <div class="hotel-grid">
+          <div class="slider">
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="img/slade-1.jpg" alt="Slade" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slade-2.jpg" alt="Slade" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slade-3.jpg" alt="Slade" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slade-4.jpg" alt="Slade" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slade-5.jpg" alt="Slade" />
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="slider-button slider-button--prev"></div>
+              <div class="slider-button slider-button--next"></div>
+            </div>
+            <!-- /.swiper-container -->
+          </div>
+          <!-- /.slider -->
+        </div>
+        <!-- /.hotel-grid -->
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.section -->
+    <!-- /.hotel -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
