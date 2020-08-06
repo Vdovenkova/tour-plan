@@ -693,6 +693,22 @@ img {
   padding: 27px;
 }
 
+.booking-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .booking__button {
   width: 100%;
   min-height: 45px;
@@ -794,6 +810,14 @@ img {
 
 .call-center__block {
   margin-bottom: 17px;
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+  background-color: #0A223D;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
