@@ -10,6 +10,10 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=5e17660b-0401-446e-9d7e-8f5565065f4e&lang=ru_RU"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <header class="navbar">
@@ -226,13 +230,7 @@
             </div>
             <!-- /.booking -->
             <div class="map">
-              <iframe
-                class="map-google"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31109.029208696214!2d100.86002596211468!3d12.93157243301615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310296059bd3779b%3A0x37191e723a1a258!2sHilton%20Pattaya!5e0!3m2!1sru!2sru!4v1596741755778!5m2!1sru!2sru"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
+              <div id="map" class="map-block"></div>
             </div>
             <!-- /.map -->
           </div>
