@@ -938,7 +938,6 @@ img {
 
 .reviews-slider__item {
   position: relative;
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -965,7 +964,6 @@ img {
   height: 47px;
   background-image: url(../img/quotes-left.svg);
   background-repeat: no-repeat;
-  border: 1px solid blue;
 }
 
 .reviews-slider__item::after {
@@ -977,7 +975,6 @@ img {
   height: 47px;
   background-image: url(../img/quotes-right.svg);
   background-repeat: no-repeat;
-  border: 1px solid blue;
 }
 
 .reviews-slider__button {
@@ -1005,7 +1002,6 @@ img {
 }
 
 .reviews-slider__profile {
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1057,7 +1053,6 @@ img {
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
-  border: 2px solid red;
 }
 
 @media (max-width: 1200px) {
@@ -1121,6 +1116,23 @@ img {
   }
   .map {
     width: 340px;
+  }
+  .reviews {
+    padding-bottom: 60px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
+  }
+  .reviews-slider__item::before, .reviews-slider__item::after {
+    display: none;
+  }
+  .reviews-slider__text {
+    max-width: 455px;
   }
 }
 
@@ -1216,6 +1228,21 @@ img {
   .newsletter-title__block {
     margin-bottom: 37px;
   }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-left: -90px;
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+    margin-right: -90px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1236,6 +1263,17 @@ img {
     font-size: 30px;
     line-height: 38px;
   }
+  .reviews {
+    padding-bottom: 50px;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 40px;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1250,6 +1288,11 @@ img {
 @media (max-width: 360px) {
   .hotel-slider {
     height: 200px;
+  }
+  .reviews__title {
+    max-width: 245px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
