@@ -13,11 +13,11 @@
     max-width: 700px
   .navbar
     &-top
-      padding-top: 30px 0
+      padding: 30px 0
     &__search
       margin-left: auto
     &-menu
-      padding-top: 22px 0
+      padding: 22px 0
       &__link
         font-size: 12px
         line-height: 15px
@@ -27,6 +27,7 @@
     &__input 
       width: 340px
   .hotel
+    padding-bottom: 60px
     &-grid
       flex-direction: column
     &-slider
@@ -79,6 +80,7 @@
   .stars
     flex-basis: auto
   .hotel
+    padding: 0 0 40px 0
     &-wrapper      
       justify-content: space-between
     &-name
@@ -150,7 +152,18 @@
   .subscribe
     width: 100%
 @media ( max-width: 360px )
+  .container, .newsletter-container
+    max-width: 90%    
+  .navbar
+    &-top
+      padding: 28px 0
+  .stars
+    flex-basis: 24%
   .hotel
+    &-description
+      max-width: 90%
+    &-grid
+      padding-top: 18px
     &-slider
       height: 200px
   .reviews
