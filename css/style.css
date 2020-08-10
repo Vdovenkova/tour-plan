@@ -1465,11 +1465,6 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .activities__card--third {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
   .card {
     width: 90%;
   }
