@@ -52,6 +52,12 @@ function init() {
   myMap.geoObjects.add(myGeoObject);
 }
 
+// Параллакс
+$(".newsletter").parallax({
+  imageSrc: "/img/newsletter-bg.jpg",
+  speed: 0.2,
+});
+
 var reviewsSlider = new Swiper(".reviews-slider", {
   // Optional parameters
   loop: true,
