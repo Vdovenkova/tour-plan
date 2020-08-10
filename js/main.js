@@ -54,7 +54,7 @@ function init() {
 
 // Параллакс
 $(".newsletter").parallax({
-  imageSrc: "/img/newsletter-bg.jpg",
+  imageSrc: "img/newsletter-bg.jpg",
   speed: 0.2,
 });
 
