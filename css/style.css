@@ -1181,6 +1181,22 @@ img {
   line-height: 20px;
 }
 
+.card__title--first {
+  width: 145px;
+}
+
+.card__title--second {
+  width: 153px;
+}
+
+.card__title--third {
+  width: 161px;
+}
+
+.card__title--fourth {
+  width: 200px;
+}
+
 .card__button {
   color: #ffffff;
   font-weight: 600;
@@ -1292,18 +1308,6 @@ img {
   .card {
     width: 340px;
     height: 255px;
-  }
-  .card__title--first {
-    width: 145px;
-  }
-  .card__title--second {
-    width: 153px;
-  }
-  .card__title--third {
-    width: 161px;
-  }
-  .card__title--fourth {
-    width: 200px;
   }
 }
 
