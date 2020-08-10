@@ -472,6 +472,10 @@ img {
   border: none;
 }
 
+.search__input:focus {
+  outline: none;
+}
+
 .search__button {
   position: absolute;
   top: 0;
@@ -480,6 +484,10 @@ img {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+}
+
+.search__button:focus {
+  outline: none;
 }
 
 .user {
@@ -913,6 +921,43 @@ img {
   border: none;
 }
 
+.subscribe__input:focus {
+  outline: none;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  color: #bdbdbd;
+}
+
+.subscribe__input:-ms-input-placeholder {
+  color: #bdbdbd;
+}
+
+.subscribe__input::-ms-input-placeholder {
+  color: #bdbdbd;
+}
+
+.subscribe__input::placeholder {
+  color: #bdbdbd;
+}
+
+.subscribe__input:-ms-input-placeholder {
+  color: #bdbdbd;
+}
+
+.subscribe__input::-ms-input-placeholder {
+  color: #bdbdbd;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  color: #bdbdbd;
+}
+
+.subscribe__input::-moz-placeholder {
+  color: #bdbdbd;
+  opacity: 1;
+}
+
 .subscribe__button {
   position: absolute;
   top: 0;
@@ -925,6 +970,10 @@ img {
   font-size: 12px;
   line-height: 15px;
   color: #ffffff;
+}
+
+.subscribe__button:focus {
+  outline: none;
 }
 
 .reviews {

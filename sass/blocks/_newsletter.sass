@@ -49,11 +49,20 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
-    // color: #bdbdbd
-    // нужно через псевдоэлементы задать цвет текста "Your email address"
-    // потому что, параметр color, как оказалось,
-    // это цвет текста, который будет вводиться в этом поле    
     border: none
+    &:focus
+      outline: none
+    &::placeholder
+      color: #bdbdbd
+    &:-ms-input-placeholder
+      color: #bdbdbd
+    &::-ms-input-placeholder
+      color: #bdbdbd
+    &::-webkit-input-placeholder
+      color: #bdbdbd
+    &::-moz-placeholder
+      color: #bdbdbd
+      opacity: 1
   &__button
     position: absolute
     top: 0
@@ -66,3 +75,5 @@
     font-size: 12px
     line-height: 15px
     color: $light
+    &:focus
+      outline: none
