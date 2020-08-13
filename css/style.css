@@ -845,6 +845,53 @@ img {
   height: 100%;
 }
 
+.other-packages {
+  padding: 40px 0 70px 0;
+}
+
+.other-packages__title {
+  margin: 0 0 65px 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.other-packages__grid {
+  color: #ffffff;
+}
+
+.big-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.big-card__hotel-description {
+  padding: 46px 0 30px 44px;
+  background-color: #0A223D;
+}
+
+.card-grid__block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (30px)[3];
+      grid-template-rows: repeat(3, 30px);
+  -ms-grid-columns: 30px 300px;
+      grid-template-columns: 30px 300px;
+}
+
+.card-grid__text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.small-card__hotel-description {
+  background-color: #0A223D;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
