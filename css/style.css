@@ -883,6 +883,7 @@ img {
 
 .big-card__block {
   position: relative;
+  width: 365px;
   height: 500px;
 }
 
