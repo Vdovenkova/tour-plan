@@ -932,7 +932,7 @@ img {
   margin-bottom: 5px;
 }
 
-.card-grid__block {
+.card-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (26px)[3];
@@ -941,11 +941,11 @@ img {
       grid-template-columns: 30px 175px;
 }
 
-.card-grid__block-big {
+.card-grid__big {
   margin-bottom: 24px;
 }
 
-.card-grid__block-small {
+.card-grid__small {
   margin-bottom: 14px;
 }
 
