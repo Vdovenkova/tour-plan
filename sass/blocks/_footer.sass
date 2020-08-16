@@ -7,7 +7,7 @@
   &-wrapper
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
-    // grid-template-columns: 285px, 285px, 345px, 195px
+    // grid-template-columns: 285px 285px 344px 194px
     grid-auto-rows: minmax(68px, min-content)
     &__block
       margin-bottom: 95px
@@ -18,7 +18,8 @@
   &__categories
     grid-row: 1 / 4
   &__legal
-    padding-left: 50px
+    margin-left: auto
+  //   padding-left: 50px
   &__social
     &-links
       display: flex
@@ -36,12 +37,13 @@
       grid-column: span 2      
     &-form
       grid-column: span 2
+      margin-left: auto
   &__form
     display: flex
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
-    max-width: 540px
+    max-width: 540px    
     &-info
       font-weight: bold
       font-size: 12px
@@ -83,8 +85,8 @@
     &-wrapper
       min-width: 40px
   &__input
-    flex-basis: 48%
-    // width: 255px
+    // flex-basis: 48%
+    width: 255px
     height: 50px
     background-color: $light
     border-radius: 4px
@@ -168,25 +170,4 @@
         right: 0        
         max-width: 136px
         height: 22px
-  // &__info    
-  //   // display: grid
-  //   // grid-template-columns: repeat(3, minmax(min-content, 1fr))
-  // &-img
-  //   // justify-self: end
-  //   max-width: 136px
-  //   height: 22px
-  //   object-fit: cover
-      // &-bottom
-      // // grid-column: span 2
-      // // justify-self: end
-      // display: flex
-      // align-items: center
-      // justify-content: center
 
-
-      //     &-bottom
-      // font-weight: normal
-      // font-size: 12px
-      // line-height: 15px
-      // &:not(:last-child)
-      //   margin-right: 15px

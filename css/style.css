@@ -1424,7 +1424,7 @@ img {
 }
 
 .footer__legal {
-  padding-left: 50px;
+  margin-left: auto;
 }
 
 .footer__social-links {
@@ -1460,6 +1460,7 @@ img {
 
 .footer__contact-form {
   grid-column: span 2;
+  margin-left: auto;
 }
 
 .footer__form {
@@ -1541,8 +1542,7 @@ img {
 }
 
 .footer__input {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+  width: 255px;
   height: 50px;
   background-color: #ffffff;
   border-radius: 4px;
