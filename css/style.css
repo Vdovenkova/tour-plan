@@ -1525,7 +1525,7 @@ button {
   color: #BDBDBD;
   font-weight: normal;
   font-size: 14px;
-  line-height: 157%;
+  line-height: 158%;
 }
 
 .footer__item-contact {
@@ -2093,6 +2093,7 @@ button {
     margin-bottom: 20px;
   }
   .footer__title-form {
+    margin-top: 8px;
     margin-bottom: 15px;
   }
   .footer__legal {
@@ -2103,18 +2104,17 @@ button {
     margin-left: 0;
   }
   .footer__categories {
-    -ms-grid-row: 4;
-    grid-row: 4;
+    -ms-grid-row: 5;
+    grid-row: 5;
     -ms-grid-column: 1;
     grid-column: 1;
     margin-bottom: 0;
   }
   .footer__additional {
-    -ms-grid-row: 5;
-    grid-row: 5;
+    -ms-grid-row: 4;
+    grid-row: 4;
     -ms-grid-column: 1;
     grid-column: 1;
-    margin-bottom: 7px;
   }
   .footer__contact-details {
     -ms-grid-row: 6;
