@@ -388,6 +388,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1110px;
   margin: auto;
@@ -739,7 +743,6 @@ img {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .booking-info {
@@ -990,7 +993,6 @@ img {
   background-color: #EC1F46;
   border-radius: 4px;
   border: none;
-  cursor: pointer;
 }
 
 .small-card {
@@ -1380,7 +1382,10 @@ img {
   background-color: #EC1F46;
   border-radius: 4px;
   border: none;
-  cursor: pointer;
+}
+
+.container {
+  border: 1px solid green;
 }
 
 .footer {
@@ -1400,7 +1405,7 @@ img {
 }
 
 .footer-wrapper__block {
-  margin-bottom: 120px;
+  margin-bottom: 95px;
 }
 
 .footer__logo {
@@ -1452,11 +1457,12 @@ img {
 
 .footer__contact-details {
   grid-column: span 2;
+  margin-top: 10px;
 }
 
 .footer__contact-form {
   grid-column: span 2;
-  margin-left: auto;
+  margin-left: 19px;
 }
 
 .footer__form {
@@ -1505,8 +1511,12 @@ img {
   margin: 0 43px 0 0;
 }
 
-.footer__title--mb-3 {
-  margin-bottom: 30px;
+.footer__title--mb-27 {
+  margin-bottom: 27px;
+}
+
+.footer__title--mb-35 {
+  margin-bottom: 35px;
 }
 
 .footer__ul {
@@ -1519,7 +1529,7 @@ img {
   color: #BDBDBD;
   font-weight: normal;
   font-size: 14px;
-  line-height: 160%;
+  line-height: 157%;
 }
 
 .footer__item-contact {
@@ -1541,7 +1551,8 @@ img {
 }
 
 .footer__text {
-  margin-bottom: 28px;
+  margin-top: 0;
+  margin-bottom: 27px;
   color: #BDBDBD;
   font-weight: normal;
   font-size: 14px;
@@ -1550,11 +1561,16 @@ img {
 
 .footer__icon-wrapper {
   min-width: 40px;
+  margin-left: 7px;
+}
+
+.footer__icon-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer__input {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+  width: 255px;
   height: 50px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -1673,41 +1689,68 @@ img {
 }
 
 .footer-bottom {
-  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template: 1fr/repeat(3, 1fr);
 }
 
-.footer-bottom__ul {
-  position: absolute;
-  left: 36%;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.footer-bottom__left {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.footer-bottom__item {
+.footer-bottom__right {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ul-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: (auto)[3];
+      grid-template: 1fr/repeat(3, auto);
+  width: 290px;
+}
+
+.ul-list__link {
+  text-decoration: none;
+  color: #ffffff;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
 }
 
-.footer-bottom__item:not(:last-child) {
-  margin-right: 15px;
+.ul-images {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: (minmax(27px, 1fr))[5];
+      grid-template: 1fr/repeat(5, minmax(27px, 1fr));
+  justify-items: flex-end;
+  max-width: 135px;
 }
 
-.footer-bottom__img {
+.ul-images__img {
+  max-width: 20px;
+  height: 14px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.footer-bottom__img-block {
-  position: absolute;
-  right: 0;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  max-width: 136px;
-  height: 22px;
 }
 
 @media (max-width: 1200px) {
@@ -1834,7 +1877,7 @@ img {
     grid-row-gap: 40px;
   }
   .footer-wrapper__block {
-    margin-bottom: 78px;
+    margin-bottom: 56px;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1882,16 +1925,35 @@ img {
     grid-row: 3;
   }
   .footer__contact-form {
-    grid-column: span 2;
+    grid-column: span 3;
     -ms-grid-row: 4;
     grid-row: 4;
+    margin-left: 0;
+  }
+  .footer__form {
+    width: 540px;
+  }
+  .footer__form-block {
+    max-width: 540px;
   }
   .footer__input {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
   }
-  .footer-bottom__ul {
-    left: 0;
+  .footer-bottom {
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: (1fr)[2];
+        grid-template: 1fr/repeat(2, 1fr);
+  }
+  .footer-bottom__left {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .ul-list {
+    margin-left: 0;
   }
 }
 
@@ -1921,7 +1983,6 @@ img {
         -ms-flex-align: center;
             align-items: center;
     border: none;
-    cursor: pointer;
     background-color: #ffffff;
   }
   .menu-button__line {
@@ -2119,6 +2180,12 @@ img {
   }
 }
 
+@media (max-width: 608px) {
+  .footer__form {
+    width: 100%;
+  }
+}
+
 @media (max-width: 576px) {
   .hotel-slider {
     height: 250px;
@@ -2171,27 +2238,17 @@ img {
     margin-bottom: 30px;
   }
   .footer-bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template: 1fr / 1fr;
   }
-  .footer-bottom__ul {
-    position: relative;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+  .footer-bottom__left {
     margin-bottom: 10px;
   }
-  .footer-bottom__item:not(:last-child) {
-    margin-right: 7px;
-  }
-  .footer-bottom__img-block {
-    position: relative;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+  .footer-bottom__right {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -2257,6 +2314,19 @@ img {
     max-width: 245px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .footer__text {
+    max-width: 95%;
+  }
+  .footer__icon-wrapper {
+    min-width: 27px;
+    margin-left: 3px;
+  }
+  .wrap {
+    display: block;
+  }
+  .wrap br {
+    display: none;
   }
 }
 

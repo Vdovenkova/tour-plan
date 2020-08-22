@@ -766,7 +766,7 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__contact-details">
-            <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
+            <h3 class="footer__title footer__title--mb-27">Contact Details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
@@ -779,8 +779,10 @@
                     alt="Icon: map"
                   />
                 </div>
-                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
-                States
+                <span class="footer__icon-text">
+                  9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                  States
+                </span>
               </li>
               <li class="footer__item footer__item-contact footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -790,10 +792,23 @@
                     alt="Icon: telephone"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <span class="footer__icon-text">
+                  Tel (business hours) :
+                  <a href="tel:2691500" class="footer__icon-link">269 1500</a
+                  ><br />
+                  Tel (hotline) Monday - Saturday:
+                  <span class="wrap"
+                    ><a href="tel:52-56-61-38" class="footer__icon-link"
+                      >52-56-61-38</a
+                    >
+                    (08:00 am – 20:00 pm)</span
+                  ><br />
+                  Tel (hotline) Sunday:
+                  <a href="tel:52-56-61-38" class="footer__icon-link"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 14:00 pm)
+                </span>
               </li>
               <li class="footer__item footer__item-contact footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -803,13 +818,17 @@
                     alt="Icon: email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a
+                  href="mailto:cherly.lawson@example.com"
+                  class="footer__icon-link"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title-form footer__title--mb-3">
+            <h3 class="footer__title footer__title-form footer__title--mb-35">
               Send us a message
             </h3>
             <form action="#" class="footer__form">
@@ -838,23 +857,56 @@
         </div>
         <!-- /.footer-wrapper -->
         <div class="footer-bottom">
-          <ul class="footer__ul footer-bottom__ul">
-            <li class="footer__item footer-bottom__item">Disclaimer</li>
-            <li class="footer__item footer-bottom__item">
-              Conditions of use
-            </li>
-            <li class="footer__item footer-bottom__item">
-              Cancellation policy
-            </li>
-          </ul>
-          <div class="footer-bottom__img-block">
-            <img
-              src="img/footer-img.png"
-              alt="Image: Payment systems"
-              class="footer-bottom__img"
-            />
+          <div class="footer-bottom__left">
+            <ul class="ul-list">
+              <li class="ul-list__item">
+                <a href="#" class="ul-list__link">Disclaimer</a>
+              </li>
+              <li class="ul-list__item">
+                <a href="#" class="ul-list__link">Conditions of use</a>
+              </li>
+              <li class="ul-list__item">
+                <a href="#" class="ul-list__link">Cancellation policy</a>
+              </li>
+            </ul>
           </div>
-          <!-- /.footer-bottom__img-block -->
+          <!-- /.footer-bottom__left -->
+          <div class="footer-bottom__right">
+            <ul class="ul-images">
+              <li class="ul-images__item">
+                <img src="img/01-amex.png" alt="Amex" class="ul-images__img" />
+              </li>
+              <li class="ul-images__item">
+                <img
+                  src="img/02-apple.png"
+                  alt="Apple"
+                  class="ul-images__img"
+                />
+              </li>
+              <li class="ul-images__item">
+                <img
+                  src="img/03-amazon.png"
+                  alt="Amazon"
+                  class="ul-images__img"
+                />
+              </li>
+              <li class="ul-images__item">
+                <img
+                  src="img/04-paypal.png"
+                  alt="Paypal"
+                  class="ul-images__img"
+                />
+              </li>
+              <li class="ul-images__item">
+                <img
+                  src="img/05-master-card.png"
+                  alt="Master-card"
+                  class="ul-images__img"
+                />
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-bottom__right -->
         </div>
         <!-- /.footer-bottom -->
       </div>

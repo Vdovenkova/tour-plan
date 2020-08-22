@@ -80,31 +80,25 @@
   .footer
     padding: 73px 0 33px 0
     &-wrapper
-      grid-template-columns: 1fr 45% 1fr
-      // grid-template-columns: repeat(6, 1fr)
+      grid-template-columns: 1fr 45% 1fr      
       grid-row-gap: 40px
       &__block
-        margin-bottom: 78px
+        margin-bottom: 56px
     &__logo
       grid-row: 1 / 2
-      width: 104px
-      // grid-column: span 2
+      width: 104px      
     &__social
       &-network
         grid-row: 1 / 2
-        grid-column: span 2
-        // grid-column: span 4
+        grid-column: span 2        
         align-self: center
     &__categories
       grid-row: 2 / 3
-      margin-bottom: 20px
-      // grid-column: span 2
+      margin-bottom: 20px      
     &__additional
-      grid-row: 2 / 3
-      // grid-column: span 2
+      grid-row: 2 / 3      
     &__legal
-      grid-row: 2 / 3
-      // grid-column: span 2
+      grid-row: 2 / 3      
     &__title
       &--mb-3
         margin-bottom: 25px
@@ -114,18 +108,26 @@
       margin-bottom: 22px
     &__contact
       &-details
-        grid-column: span 2
-        // grid-column: span 6
+        grid-column: span 2        
         grid-row: 3
       &-form
-        grid-column: span 2
-        // grid-column: span 5
+        grid-column: span 3
         grid-row: 4
+        margin-left: 0
+    &__form
+      width: 540px
+      &-block
+        max-width: 540px
     &__input
-      flex-basis: 48%
+      flex-basis: 48%    
     &-bottom
-      &__ul
-        left: 0  
+      grid-template: 1fr / repeat(2, 1fr)
+      &__left
+        grid-column-start: 1
+        justify-content: flex-start
+  .ul
+    &-list
+      margin-left: 0
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -142,7 +144,7 @@
     justify-content: space-between
     align-items: center
     border: none
-    cursor: pointer
+    // cursor: pointer
     background-color: $light
     &__line
       width: 16px
@@ -265,6 +267,10 @@
         padding-top: 25px
       &-title
         margin-bottom: 20px
+@media ( max-width: 608px )
+  .footer
+    &__form
+      width: 100%
 @media ( max-width: 576px )  
   .hotel
     &-slider
@@ -304,19 +310,11 @@
       &__block
         margin-bottom: 30px
     &-bottom
-      display: flex
-      flex-direction: column
-      &__ul
-        position: relative
-        transform: translateY(0)
+      grid-template: 1fr / 1fr
+      &__left
         margin-bottom: 10px
-      &__item
-        &:not(:last-child)
-          margin-right: 7px
-      &__img
-        &-block
-          position: relative
-          transform: translateY(0)
+      &__right      
+        justify-content: flex-start     
 @media ( max-width: 420px )
   .logo
     &--horizontal
@@ -368,6 +366,14 @@
       max-width: 245px
       margin-left: auto
       margin-right: auto
+  .footer
+    &__text
+      max-width: 95%    
+    &__icon-wrapper
+      min-width: 27px
+      margin-left: 3px
+  // .wrap
+  //   display: block
 @media ( max-width: 320px )
   .hotel 
     &-slider
