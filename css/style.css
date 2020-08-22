@@ -1718,7 +1718,7 @@ button {
   -ms-grid-rows: 1fr;
   -ms-grid-columns: (auto)[3];
       grid-template: 1fr/repeat(3, auto);
-  width: 290px;
+  min-width: 290px;
 }
 
 .ul-list__link {
