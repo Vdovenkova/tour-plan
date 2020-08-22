@@ -132,9 +132,55 @@
   .container
     max-width: 576px
     width: 92%
+  body
+    padding-top: 78px
   .navbar
-    &__search, &__user, &-menu
-      display: none            
+    &__mobile
+      &--fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
+    &__search, &__user
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
+    &-bottom
+      display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px
+      &--visible
+        display: block
+    &-menu
+      flex-direction: column
+      padding-top: 31px
+      &__item
+        margin-bottom: 17px
+        &--mobile
+          &--visible
+            display: block
+        &--user
+          margin-bottom: 27px
+        &--search
+          margin-bottom: 37px
+      &__link
+        font-weight: bold
+  .user
+    &__avatar
+      &--mobile
+        margin-bottom: 10px
+    &__name
+      &--mobile
+        margin-left: 0        
   .menu-button
     display: flex
     width: 16px
@@ -252,7 +298,7 @@
       &-info
         order: -1
         margin-bottom: 15px
-@media ( max-width:  710px)
+@media ( max-width: 710px)
   .other-packages
     &__title
       margin-bottom: 50px
@@ -271,7 +317,7 @@
   .footer
     &__form
       width: 100%
-@media ( max-width: 576px )  
+@media ( max-width: 576px )
   .hotel
     &-slider
       height: 250px
@@ -316,9 +362,19 @@
       &__right      
         justify-content: flex-start     
 @media ( max-width: 420px )
+  body
+    padding-top: 70px
   .logo
     &--horizontal
       width: 99px
+  .navbar
+    &-top
+      padding: 25px 0 29px 0
+    &-bottom
+      top: 70px
+  .search
+    &__input 
+      max-width: 290px      
   .subscribe, .card
     width: 100%
   .other-packages    
@@ -345,10 +401,10 @@
         padding: 8px 20px
 @media ( max-width: 360px )
   .container, .newsletter-container
-    max-width: 90%    
-  .navbar
-    &-top
-      padding: 28px 0
+    max-width: 90%
+  .search
+    &__input 
+      max-width: 245px
   .stars
     flex-basis: 24%
   .hotel

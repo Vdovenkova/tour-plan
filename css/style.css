@@ -392,6 +392,10 @@ button {
   cursor: pointer;
 }
 
+button:focus {
+  outline: none;
+}
+
 .container {
   max-width: 1110px;
   margin: auto;
@@ -449,6 +453,10 @@ button {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.navbar-menu__item--mobile--visible {
+  display: none;
 }
 
 .logo {
@@ -1958,8 +1966,71 @@ button {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar__user, .navbar-menu {
+  body {
+    padding-top: 78px;
+  }
+  .navbar__mobile--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
     display: none;
+  }
+  .navbar__search--mobile--visible, .navbar__user--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 31px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 17px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
+  }
+  .navbar-menu__item--user {
+    margin-bottom: 27px;
+  }
+  .navbar-menu__item--search {
+    margin-bottom: 37px;
+  }
+  .navbar-menu__link {
+    font-weight: bold;
+  }
+  .user__avatar--mobile {
+    margin-bottom: 10px;
+  }
+  .user__name--mobile {
+    margin-left: 0;
   }
   .menu-button {
     display: -webkit-box;
@@ -2249,8 +2320,20 @@ button {
 }
 
 @media (max-width: 420px) {
+  body {
+    padding-top: 70px;
+  }
   .logo--horizontal {
     width: 99px;
+  }
+  .navbar-top {
+    padding: 25px 0 29px 0;
+  }
+  .navbar-bottom {
+    top: 70px;
+  }
+  .search__input {
+    max-width: 290px;
   }
   .subscribe, .card {
     width: 100%;
@@ -2286,8 +2369,8 @@ button {
   .container, .newsletter-container {
     max-width: 90%;
   }
-  .navbar-top {
-    padding: 28px 0;
+  .search__input {
+    max-width: 245px;
   }
   .stars {
     -ms-flex-preferred-size: 24%;
