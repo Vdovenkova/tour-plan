@@ -1384,10 +1384,6 @@ button {
   border: none;
 }
 
-.container {
-  border: 1px solid green;
-}
-
 .footer {
   background-color: #0A223D;
   color: #ffffff;
@@ -2321,12 +2317,6 @@ button {
   .footer__icon-wrapper {
     min-width: 27px;
     margin-left: 3px;
-  }
-  .wrap {
-    display: block;
-  }
-  .wrap br {
-    display: none;
   }
 }
 
