@@ -4,8 +4,7 @@
   padding: 108px 0 46px 0
   &-wrapper
     display: grid
-    grid-template-columns: repeat(4, minmax(min-content, 1fr))
-    // grid-template-columns: 285px 285px 344px 194px
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))    
     grid-auto-rows: minmax(68px, min-content)
     &__block
       margin-bottom: 95px
@@ -47,10 +46,6 @@
       font-size: 12px
       line-height: 15px
       color: #E0E0E0
-    &-block
-      display: flex      
-      align-items: center
-      justify-content: space-between
   &__title
     margin: 0 0 18px 0
     font-weight: bold
@@ -94,8 +89,7 @@
     &-link
       text-decoration: none
       color: inherit
-  &__input
-    // flex-basis: 48%
+  &__input    
     width: 255px
     height: 50px
     background-color: $light
@@ -120,8 +114,7 @@
       color: #bdbdbd
       opacity: 1
   &__message
-    flex-basis: 100%
-    // width: 540px
+    flex-basis: 100%    
     height: 123px
     margin-bottom: 22px
     background-color: $light
