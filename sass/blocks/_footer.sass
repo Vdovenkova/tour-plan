@@ -36,12 +36,10 @@
       grid-column: span 2
       margin-left: 19px
   &__form
-    // display: flex
-    // align-items: center
-    // justify-content: space-between
-    // flex-wrap: wrap
+    align-items: start
     max-width: 540px
     &-info
+      align-self: center
       font-weight: bold
       font-size: 12px
       line-height: 15px
@@ -89,9 +87,12 @@
     &-link
       text-decoration: none
       color: inherit
-  &__input    
-    width: 255px
-    margin-bottom: 15px
+  &__input
+    width: 100%    
+    &-group
+      position: relative
+      width: 255px
+      margin-bottom: 15px
   &__message
     flex-basis: 100%
     margin-bottom: 22px  

@@ -95,4 +95,23 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+  // Валидация форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Name is more than 2 letters",
+        },
+        phone: {
+          required: "Phone number is required",
+        },
+        email: {
+          required: "Email is required",
+          email: "Format email - name@domain.com",
+        },
+      },
+    });
+  });
 });

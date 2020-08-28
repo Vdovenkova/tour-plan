@@ -17,7 +17,8 @@
         max-width: 315px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media ( max-width: 998px)
   .container, .newsletter-container
     max-width: 700px
@@ -119,7 +120,8 @@
       &-block
         max-width: 540px
     &__input
-      flex-basis: 48%    
+      &-group
+        flex-basis: 48%    
     &-bottom
       grid-template: 1fr / repeat(2, 1fr)
       &__left
@@ -304,7 +306,8 @@
         grid-column: 1
         margin-left: 0
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__message
       margin-bottom: 15px
     &__button
@@ -394,7 +397,7 @@
   .modal
     &__dialog
       min-width: 75%
-@media screen and (max-width: 520px)
+@media (max-width: 520px)
   .modal
     &__dialog
       min-width: 80%
@@ -414,9 +417,12 @@
       top: 70px
   .search
     &__input 
-      max-width: 290px      
-  .subscribe, .card
+      max-width: 290px
+  .card
     width: 100%
+  .newsletter
+    &__form 
+      width: 100%
   .other-packages    
     padding: 30px 0 50px 0
     &__title
