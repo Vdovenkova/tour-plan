@@ -1572,6 +1572,10 @@ label.invalid {
   grid-row: 1 / 4;
 }
 
+.footer__additional {
+  margin-left: 19px;
+}
+
 .footer__legal {
   margin-left: auto;
 }
@@ -1600,6 +1604,7 @@ label.invalid {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  margin-left: 19px;
   padding-top: 20px;
 }
 
@@ -2022,6 +2027,7 @@ label.invalid {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    margin-left: 0;
   }
   .footer__categories {
     -ms-grid-row: 2;
@@ -2033,6 +2039,7 @@ label.invalid {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
+    margin-left: 10px;
   }
   .footer__legal {
     -ms-grid-row: 2;
@@ -2333,6 +2340,7 @@ label.invalid {
     grid-row: 4;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-left: 0;
   }
   .footer__contact-details {
     -ms-grid-row: 6;
