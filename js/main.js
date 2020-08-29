@@ -114,4 +114,6 @@ $(document).ready(function () {
       },
     });
   });
+  // плагин анимации
+  AOS.init();
 });

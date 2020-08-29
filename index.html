@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://api-maps.yandex.ru/2.1/?apikey=5e17660b-0401-446e-9d7e-8f5565065f4e&lang=ru_RU"></script>
   </head>
@@ -16,7 +17,12 @@
     <header class="navbar navbar__mobile navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo logo--horizontal">
+          <a
+            href="#"
+            class="logo logo--horizontal"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -40,7 +46,11 @@
               />
             </button>
           </form>
-          <a class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -661,7 +671,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
             <img
               src="img/activities-img-1.jpg"
               alt="The curious corner of chamarel"
@@ -671,7 +685,11 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
             <img
               src="img/activities-img-2.jpg"
               alt="Gymkhana club golf course"
@@ -681,7 +699,11 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
             <img
               src="img/activities-img-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -693,7 +715,11 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
             <img
               src="img/activities-img-4.jpg"
               alt="The blue marine discovery quest"
@@ -1013,6 +1039,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
